@@ -1,6 +1,1 @@
-
-    PrintBin(n);
-    printf("\n%u\n",n); 
- 
-    return 0;
-}
+12 15 12
