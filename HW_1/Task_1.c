@@ -24,24 +24,24 @@ int main()
 	printf("Enter a number N (N > 0), then push Enter\n");
 	scanf("%d", &N);
 	printf("Enter the numbers one at a time\n");
-	uint32_t count = 0;
+	uint32_t countMax = 0;
 	uint32_t max = 0;
-	uint32_t temp = 0;
+	uint32_t tmp = 0;
 	for (int i = 0; i < N; ++i)
 	{
-		scanf("%d", &temp);
-		if (temp > max)
+		scanf("%d", &tmp);
+		if (tmp > max)
 		{
-			max = temp;
-			count = 1;
+			max = tmp;
+			countMax = 1;
 		}
-		else if (temp == max)
+		else if (tmp == max)
 		{
-			count++;
+			countMax++;
 		}
 	}
 	
-	printf("MAXimum number printed => %u times\n", count);
+	printf("MAXimum number printed => %u times\n", countMax);
 	return 0;
 }
 
