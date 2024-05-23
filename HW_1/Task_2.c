@@ -16,12 +16,14 @@
 #include <stdint.h>
 
  
-int invert (const int num, const int bit) {
+int invert (const int num, const int bit) 
+{
     const int mask = 1 << bit;
     return (num & mask)? (num & ~mask) : (num | mask);
 }
  
-void PrintBin (int n) {
+void PrintBin (int n) 
+{
     printf("\n");
     for (int i=31; i>=0; --i) {
         printf("%d", (n & (1 << i))? 1 : 0);
@@ -29,9 +31,10 @@ void PrintBin (int n) {
     }
 }
  
-int main (void) {
+int main (void) 
+{
     uint32_t n, b;
-    printf("n = ");
+    printf("\nEnter nuber:\nN = ");
     scanf("%u", &n); 
     PrintBin(n); 
     for (size_t i = 24; i < 32; i++)
@@ -39,7 +42,7 @@ int main (void) {
         n = invert(n, i);
     }
     PrintBin(n);
-    printf("\n%u\n",n); 
+    printf("\n \nN_new = %u\n\n",n); 
  
     return 0;
 }
