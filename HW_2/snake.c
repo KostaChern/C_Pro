@@ -21,8 +21,8 @@
 #include <conio.h>
 #include <unistd.h>
 
-#define MAX_X 15
-#define MAX_Y 15
+#define MAX_X 17
+#define MAX_Y 17
 #define MIN_X 0
 #define MIN_Y 0
 #define LEFT 1
